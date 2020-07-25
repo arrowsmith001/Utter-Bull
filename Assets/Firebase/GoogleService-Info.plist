@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>927291275205-hk7h2dunnfer4ibt0fem2iaiafsghf12.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.927291275205-hk7h2dunnfer4ibt0fem2iaiafsghf12</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>927291275205-qg9cb3fvcgq5ju92huc6nvtduhh8n25o.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAs_MF0aRhx7Ct0zcDXALHpzsnfA0O-89Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>927291275205</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Arrowsmith.UtterBull-v2-1</string>
+	<key>PROJECT_ID</key>
+	<string>liarliargame-dc9f6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>liarliargame-dc9f6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:927291275205:ios:d552a87cb272e9f1f9fdac</string>
+	<key>DATABASE_URL</key>
+	<string>https://liarliargame-dc9f6.firebaseio.com</string>
+</dict>
+</plist>

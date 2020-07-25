@@ -10,6 +10,9 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+# Due to trouble uploading due to large file size, the following are ignored and will be uploaded separately:
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-6_13_0.so
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
