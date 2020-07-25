@@ -44,6 +44,7 @@ public class DialogManager : MonoBehaviour
 
     public void RequestDialog(string fragName)
     {
+
         //if (!isTransitioning && dialogPanel.transform.childCount <= 1)
             ShowDialog(fragName);
     }

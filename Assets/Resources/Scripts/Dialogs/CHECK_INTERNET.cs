@@ -10,7 +10,7 @@ public class CHECK_INTERNET : MonoBehaviour
 
     public Button retry;
 
-    public void BeginChecking()
+    public void Start()
     {
 
         GameObject root = this.transform.root.gameObject;
@@ -19,8 +19,9 @@ public class CHECK_INTERNET : MonoBehaviour
 
         retry.onClick.AddListener(() =>
         {
+            Debug.Log("Check internet clicked");
             main.InternetCheck();
-            main.dm.CloseCurrentDialog();
+            main.CloseCurrentDialog();
         });
     }
 }

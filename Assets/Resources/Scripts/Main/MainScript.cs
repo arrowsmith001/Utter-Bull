@@ -443,6 +443,8 @@ public class MainScript : MonoBehaviour
 
     public void InternetCheck()
     {
+
+        Debug.Log("InternetCheck called");
         bool c = !(Application.internetReachability == NetworkReachability.NotReachable);
 
         OnInternetChecked(c);
@@ -456,7 +458,11 @@ public class MainScript : MonoBehaviour
         }
         else
         {
-            dm.RequestDialog("CHECK_INTERNET");
+            Debug.Log("Requesting CHECK_INTERNET called");
+            try
+            {
+                dm.RequestDialog("CHECK_INTERNET");
+            }catch(Exception e) { Debug.Log(e.Message); }
         }
     }
 

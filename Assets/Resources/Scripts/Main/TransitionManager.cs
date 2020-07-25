@@ -244,6 +244,14 @@ public class TransitionManager : MonoBehaviour
                     default:
                         return TransitionManager.TRANSITION_SLIDE_R2L;
                 }
+            case GP1_DELEGATE_ROLES.ID:
+                switch (fragGoingTo)
+                {
+                    case WAITING_ROOM.ID:
+                        return TransitionManager.TRANSITION_SLIDE_L2R;
+                    default:
+                        return TransitionManager.TRANSITION_SLIDE_R2L;
+                }
             case GP2_TEXT_ENTRY.ID:
                 switch (fragGoingTo)
                 {
