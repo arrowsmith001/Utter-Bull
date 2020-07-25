@@ -41,12 +41,10 @@ public class QueryHelper : MonoBehaviour
 
     }
 
-    public void SetVars(bool truthOrLie, FirebaseFirestore firestoreReference, GP2_TEXT_ENTRY gp2)
+    public void SetVars(FirebaseFirestore firestoreReference, GP2_TEXT_ENTRY gp2)
     {
-        this.truthOrLie = truthOrLie;
         this.fs = firestoreReference;
         this.gp2 = gp2;
-        this.lewdnessAllowed = true;
 
         this.ideasRef = fs.Collection("ideas");
         this.categoriesRef = fs.Collection("categories");

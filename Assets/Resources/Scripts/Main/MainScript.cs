@@ -17,6 +17,7 @@ using System.Globalization;
 
 using UnityEngine.Events;
 using UnityEngine.UI;
+using Firebase.Extensions;
 
 [System.Serializable] public class StatusEvent : UnityEvent<string, bool> { }
 
@@ -34,6 +35,7 @@ public class MainScript : MonoBehaviour
         23, 59, 0, 0, DateTimeKind.Utc);
 
     public bool PrefsWithName = true;
+    public List<string> credits = new List<string>();
 
     // FIELD VARS
     public DatabaseReference databaseRef;
@@ -108,7 +110,6 @@ public class MainScript : MonoBehaviour
         devicePlatform = Application.platform;
 
         if (killTimeActive) Kill(false);
-        // if (killTimeActive) Kill(true);
 
         GetPlayerPrefs();
 
@@ -475,11 +476,11 @@ public class MainScript : MonoBehaviour
             this.databaseRef = finit.databaseRef;
             this.fs = finit.fs;
 
+
+            // AD SETTINGS
             if (AdsOn &&
             (devicePlatform == RuntimePlatform.Android || devicePlatform == RuntimePlatform.IPhonePlayer))
             {
-
-                // AD SETTINGS
                 try
                 {
                     if (isMember == MembershipChecker.MEMBER_UNKNOWN)
@@ -514,6 +515,15 @@ public class MainScript : MonoBehaviour
             {
                 InitialState(true);
             }
+
+            // CREDITS
+            databaseRef.Child("credits").GetValueAsync().ContinueWithOnMainThread(task =>
+            {
+                if (task.IsCompleted && !task.IsFaulted)
+                {
+                    credits = JsonConvert.DeserializeObject<List<string>>(task.Result.GetRawJsonValue());
+                }
+            });
 
         }
         else

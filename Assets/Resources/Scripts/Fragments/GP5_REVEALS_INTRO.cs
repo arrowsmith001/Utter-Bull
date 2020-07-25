@@ -41,6 +41,8 @@ public class GP5_REVEALS_INTRO : Fragment
         Button_ReadyForTruth.onClick.AddListener(() =>
         {
             Button_ReadyForTruth.interactable = false;
+            Button_ReadyForTruth.GetComponent<Text>().text = "WAITING FOR OTHER PLAYERS";
+
             main.rc.SetReadyStatus(true, this);
             main.PlaySfx("button_major", 1);
         });

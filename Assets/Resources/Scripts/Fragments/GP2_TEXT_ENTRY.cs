@@ -156,7 +156,7 @@ public class GP2_TEXT_ENTRY : Fragment
 
     void OnGameSettingsChanged()
     {
-        try { this.lewdnessAllowed = main.data.currentSettings.le; } catch { }
+        try { qh.SetLewdnessAllowed(main.data.currentSettings.le); } catch { }
     }
 
     void OnPlayersChanged()
@@ -172,7 +172,7 @@ public class GP2_TEXT_ENTRY : Fragment
         catch { }
         try
         {
-            qh.truthOrLie = (bool)main.data.playersLookup[main.playerName].isTruth;
+            qh.truthOrLie = (bool) main.data.playersLookup[main.playerName].isTruth;
         }
         catch { }
         try
@@ -349,7 +349,7 @@ public class GP2_TEXT_ENTRY : Fragment
         {
                 try
                 {
-                    qh.SetVars(false, main.fs, this);
+                    qh.SetVars(main.fs, this);
                     qh.SetLewdnessAllowed(this.lewdnessAllowed);
                     qh.BeginQuery();
                 }

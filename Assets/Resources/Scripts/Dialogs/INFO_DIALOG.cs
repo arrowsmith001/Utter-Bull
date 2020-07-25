@@ -27,6 +27,8 @@ public class INFO_DIALOG : MonoBehaviour
     public int state = 0;
     public int i = 0;
 
+    public Text whiteBoxText;
+
     public GameObject button_panel;
 
     // Start is called before the first frame update
@@ -49,6 +51,31 @@ public class INFO_DIALOG : MonoBehaviour
         });
 
         // SetListeners();
+
+        SetText();
+    }
+
+    private void SetText()
+    {
+        int TITLE_SIZE = 75;
+        int NAME_SIZE = 100;
+
+        string text = "";
+        text += "<size="+TITLE_SIZE+">Game design and development</size>";
+        text += "\n" + "<size="+NAME_SIZE+ "><b>Alex Arrowsmith</b></size>";
+        text += "\n\n" + "<size=" + TITLE_SIZE + ">Sound design</size>";
+        text += "\n" + "<size="+NAME_SIZE+ "><b>Sam Yately</b></size>";
+
+        if(main.credits != null && main.credits.Count != 0)
+        {
+            text += "\n\n" + "<size="+TITLE_SIZE+ ">Special thanks</size>";
+            foreach (string name in main.credits)
+            {
+                text += "\n" + "<size=" + NAME_SIZE + "><b>" + name + "</b></size>";
+            }
+        }
+
+        whiteBoxText.text = text;
     }
 
     void SetListeners()

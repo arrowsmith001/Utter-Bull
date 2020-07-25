@@ -19,7 +19,7 @@ public class WAITING_ROOM : Fragment
     public override string GetID() { return ID; }
 
     #region FIELD VARS
-    public static int PLAYER_MIN_FOR_GAME = 2;
+    public static int PLAYER_MIN_FOR_GAME = 3;
 
     public RoleAssigner ra;
 

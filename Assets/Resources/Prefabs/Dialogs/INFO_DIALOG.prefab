@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.95999146, y: -0.0012512207}
+  m_AnchoredPosition: {x: -0.95999146, y: -0.0012207031}
   m_SizeDelta: {x: 1.9710999, y: 0.0025024414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3485353629309078971
@@ -153,10 +153,10 @@ RectTransform:
   m_Father: {fileID: 8040548757760668921}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.13241239, y: 0.13800001}
-  m_AnchorMax: {x: 0.867664, y: 0.86200005}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.4207764, y: 0}
+  m_AnchorMin: {x: 0.08981782, y: 0.05271213}
+  m_AnchorMax: {x: 0.9056663, y: 0.952}
+  m_AnchoredPosition: {x: 0, y: 0.2999878}
+  m_SizeDelta: {x: -0.000061035156, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3201442017629967511
 CanvasRenderer:
@@ -270,8 +270,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 397.72784, y: 0}
-  m_SizeDelta: {x: 795.4557, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8127109485426165936
 CanvasRenderer:
@@ -500,7 +500,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.4855652, y: 0.57003784}
+  m_AnchoredPosition: {x: 0.4855652, y: 0.57006836}
   m_SizeDelta: {x: 0.97109985, y: 0.0025024414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1920471462059924480
@@ -679,6 +679,7 @@ MonoBehaviour:
   button_BL: {fileID: 7640272459867062396}
   state: 0
   i: 0
+  whiteBoxText: {fileID: 516224493574363502}
   button_panel: {fileID: 8300577883459979263}
 --- !u!1 &5157738235761967758
 GameObject:
@@ -716,7 +717,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 898.4266}
+  m_SizeDelta: {x: 0, y: 1235.3643}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2943813471095566310
 CanvasRenderer:
@@ -757,21 +758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<size=100>Game design and development</size>
-
-    <b>Alex Arrowsmith</b>
-
-
-    <size=100>Sound
-    design</size>
-
-    <b>Sam Yately</b>
-
-
-    <size=100>Special thanks</size>
-
-    <b>David
-    Gordon</b>'
+  m_Text: 
 --- !u!114 &7479203938065034586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -829,8 +816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 397.72784, y: 0}
-  m_SizeDelta: {x: 795.4557, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5739970914172956924
 CanvasRenderer:
@@ -1180,7 +1167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.269989, y: -0.20999146}
+  m_AnchoredPosition: {x: -0.269989, y: -0.20996094}
   m_SizeDelta: {x: -0.54418945, y: 0.42651367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1545879874212289440
@@ -1277,8 +1264,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 397.72784, y: 0}
-  m_SizeDelta: {x: 705.4557, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2396257326309467104
 CanvasRenderer:
