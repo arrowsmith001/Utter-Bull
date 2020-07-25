@@ -395,10 +395,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43293fd66746746e986f10e8d78b10ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID_TAG: GP5
+  main: {fileID: 0}
+  mainCanvas: {fileID: 0}
   Main_Panel: {fileID: 8616098074029816137}
   Pos_Main: {fileID: 0}
   Button_ReadyForTruth: {fileID: 4636719268196043225}
+  Button_Text: {fileID: 4636719269614128612}
 --- !u!1001 &4784223849264571749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -606,5 +608,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4636719269614128612 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 161027488478324865, guid: d0b8b660e9f87bc4a974662943632547,
+    type: 3}
+  m_PrefabInstance: {fileID: 4784223849264571749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

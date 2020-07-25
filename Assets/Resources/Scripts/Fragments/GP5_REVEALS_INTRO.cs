@@ -17,6 +17,7 @@ public class GP5_REVEALS_INTRO : Fragment
     public PositionsHolder ph;
 
     public Button Button_ReadyForTruth;
+    public Text Button_Text;
 
 
     public override void Awake()
@@ -41,7 +42,7 @@ public class GP5_REVEALS_INTRO : Fragment
         Button_ReadyForTruth.onClick.AddListener(() =>
         {
             Button_ReadyForTruth.interactable = false;
-            Button_ReadyForTruth.GetComponent<Text>().text = "WAITING FOR OTHER PLAYERS";
+            Button_Text.text = "WAITING FOR OTHER PLAYERS";
 
             main.rc.SetReadyStatus(true, this);
             main.PlaySfx("button_major", 1);
