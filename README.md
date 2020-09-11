@@ -5,3 +5,5 @@ A multiplayer game made in Unity where users write lies about each other, and tr
 Currently published for Android and iOS. Works well enough as of July 2020.
 
 NOTE: The only file I couldn't include due to large file size (~250MB) was a /Assets/Firebase/Plugins/x86_64/FirebaseCppApp-6_13_0.so, so this may have to be manually imported through the Package Manager under the Firebase packages.
+
+Status: Finished
